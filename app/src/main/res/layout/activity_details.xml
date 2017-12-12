@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tatastrive.remindmetodo.Details">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/DetailsTv"
+      android:background="@drawable/reminders"
+      android:layout_gravity="center"
+      android:layout_marginTop="20dp"
+      android:textSize="20sp"
+       />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DetailsTvtitle"
+            android:text="Reminder for     :"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="#303F9F"
+            android:fontFamily="serif"
+            android:focusable="false" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DetailsTvtitle1"
+            android:layout_marginLeft="10dp"
+            android:hint="xyz"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="#0b0b0b" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DetailsTvdscrption"
+            android:text="Short Summary :"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="#303F9F"
+            android:fontFamily="serif" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DetailsTvdscrption1"
+            android:hint="  xyz"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="#0f0e0e" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DetailsTvroption"
+            android:text="Repeat                 :"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="#303F9F"
+            android:fontFamily="serif" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DetailsTvroption1"
+            android:hint="  xyz"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="#0c0b0b" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/DetailsTvDate"
+        android:background="@drawable/calender"
+            android:layout_weight="0.8"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+         />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/DetailsTvDate1"
+            android:layout_weight="0.2"
+            android:hint="   Date"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:textColor="#0e0d0d" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/DetailsTvTime"
+            android:background="@drawable/clock"
+            android:layout_weight="0.8"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+             />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/DetailsTvTime1"
+            android:layout_weight="0.2"
+            android:hint="   Time"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

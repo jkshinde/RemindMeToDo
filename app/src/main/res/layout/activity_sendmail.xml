@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.tatastrive.remindmetodo.Sendmail">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EmailRtv1"
+        android:text="Send Reminder"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#CC0000"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/EmailRtvTo"
+            android:text="To :"
+            android:textSize="20sp"
+            android:textColor="#E52B50"
+            android:layout_weight="0.8"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:hint="Enter Recipients email"
+            android:textSize="20sp"
+            android:textColor="#0000FF"
+            android:layout_weight="0.2"
+            android:id="@+id/EmailRetemailadd" />
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/EmailRtvTitle"
+            android:text="Reminder for :"
+            android:textSize="20sp"
+            android:textColor="#E52B50"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:layout_marginLeft="68dp"
+            android:hint="Remind me to.."
+            android:textSize="20sp"
+            android:textColor="#702963"
+            android:id="@+id/EmailRetemailTitle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/EmailRtvDescrption"
+            android:inputType="textMultiLine"
+            android:text="Description :"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#E52B50"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:layout_marginLeft="68dp"
+            android:hint="Write short summary"
+            android:textSize="20sp"
+            android:textColor="#702963"
+            android:id="@+id/EmailRetemailDscrptn" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/EmailRtvDate"
+            android:text="Date :"
+            android:textSize="20sp"
+            android:textColor="#E52B50"
+            android:layout_weight="0.8"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:textSize="20sp"
+            android:textColor="#702963"
+            android:layout_weight="0.2"
+            android:id="@+id/EmailRetemailDate" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/EmailRtvTime"
+            android:text="Time :"
+            android:textSize="20sp"
+            android:textColor="#E52B50"
+            android:layout_weight="0.8"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:textSize="20sp"
+            android:textColor="#702963"
+            android:layout_weight="0.2"
+            android:id="@+id/EmailRetemailTime" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="Cancel"
+            android:textSize="15sp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFFFFF"
+            android:background="#CC0000"
+            android:id="@+id/EmailRbtnCancel"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1279D1"
+            android:layout_weight="0.25"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="10dp"
+            android:text="Send"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/EmailRbtnSend" />
+    </LinearLayout>
+
+</LinearLayout>

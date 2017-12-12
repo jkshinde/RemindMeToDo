@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Remind Me To Do</string>
+    <string-array name="Repeat_options">
+        <item>Once</item>
+        <item>Repeat Daily</item>
+    </string-array>
+    <string name="title_activity_main">MainActivity</string>
+</resources>

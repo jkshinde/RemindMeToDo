@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ERettittle"
+        android:hint="Remind me to..."/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ERetdescrption"
+        android:hint="Write short summary "/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:hint="Add Date"
+            android:layout_marginRight="10dp"
+            android:id="@+id/ERetdate" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textSize="15sp"
+            android:layout_weight="0.7"
+            android:id="@+id/Rbtnadddate"
+            android:layout_gravity="right" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Add Time"
+            android:layout_weight="0.3"
+            android:id="@+id/ERetTime"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textSize="15sp"
+            android:layout_weight="0.7"
+            android:id="@+id/Rbtnaddtime" />
+    </LinearLayout>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ERSpinrepeat"
+        android:entries="@array/Repeat_options"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="Cancel"
+            android:textSize="15sp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFFFFF"
+            android:background="#CC0000"
+            android:id="@+id/Rbtncancel"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1279D1"
+            android:layout_weight="0.25"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="10dp"
+            android:text="Update"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/ERbtnupdate" />
+    </LinearLayout>
+
+
+</LinearLayout>
